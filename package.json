@@ -1,0 +1,57 @@
+{
+  "name": "media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/mocks/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/src/mocks/fileMock.js"
+    }
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NastyaKatyushkina/media.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NastyaKatyushkina/media/issues"
+  },
+  "homepage": "https://github.com/NastyaKatyushkina/media#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-jest": "^29.2.2",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.3.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "puppeteer": "^19.2.2",
+	 "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "style-loader": "^3.3.1",
+    "core-js": "^3.26.0",
+    "webpack": "^5.75.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
