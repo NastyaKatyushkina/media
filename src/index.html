@@ -1,40 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Timeline</title>
 </head>
+
 <body>
-	<div class="container">
-		<ul class="posts-list">
-			<!-- <li class="post">
-				<div class="post-header">
-					<span class="date">15.03.2019</span>
-					<span class="time">15:00</span>
-				</div>
-				<p>Привет! Я тут тестовый пост. Поэтому много букаф не будет. Привет! Я тут тестовый пост. Поэтому много букаф не будет.Привет! Я тут тестовый пост. Поэтому много букаф не будет. Привет! Я тут тестовый пост. Поэтому много букаф не будет. Привет! Я тут тестовый пост. Поэтому много букаф не будет.</p>
-				<span class="geolocation">[51.50851, 0.12572]</span>
-			</li> -->
-		</ul>
-
-		<textarea class="input-text" placeholder="Ваше сообщение..."></textarea>
-
-		<div class="error-modal">
-			<p>Что-то пошло не так!</p>
-			<p>К сожалению, нам не удалось опрделить ваше местоположение. Пожалуйста, дайте разрешение на использование геолокации, либо введите координаты вручную.</p>
-			<p>Широта и долгота через запятую.</p>
-
-			<form class="form" novalidate>
-				<input type="text" class="input-text input-location" placeholder="00.00000, 00.00000" required>
-
-				<div class="buttons-group">
-					<button class="button cancel-button">Отмена</button>
-					<button class="button ok-button" type="submit">OK</button>
-				</div>
-			</form>
-		</div>
-	</div>
+  <div id="root">
+    <div class="timeline"></div>
+    <form action="" class="form">
+      <div class="form__actions">
+        <video class="form__preview-video d_none" src="" muted></video>
+        <input type="text" class="form__input" placeholder="Введите сообщение"></input>
+        <div class="form__media">
+          <span class="form__micro"></span>
+          <span class="form__camera"></span>
+        </div>
+        <div class="form__record d_none">
+          <span class="form__record-btnOK"></span>
+          <span class="form__timer"></span>
+          <span class="form__record-btnCancel"></span>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>

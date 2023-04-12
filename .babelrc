@@ -4,22 +4,12 @@
       "@babel/preset-env",
       {
         "useBuiltIns": "usage",
-        "corejs": 3
+        "corejs": 3,
+        "targets": {
+          "node": "current"
+        }
       }
     ]
   ],
-  "env": {
-    "test": {
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "targets": {
-              "node": "current"
-            }
-          }
-        ]
-      ]
-    }
-  }
+  "plugins": ["@babel/plugin-proposal-class-properties"]
 }
