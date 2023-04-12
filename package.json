@@ -12,15 +12,8 @@
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "doc": "jsdoc -c jsdoc.conf.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NastyaKatyushkina/media.git"
-  },
+  "keywords": [],
   "author": "",
-  "bugs": {
-    "url": "https://github.com/NastyaKatyushkina/media/issues"
-  },
-  "homepage": "https://github.com/NastyaKatyushkina/media#readme",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
@@ -58,4 +51,3 @@
     "core-js": "^3.29.1"
   }
 }
-
